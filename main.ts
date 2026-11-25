@@ -9,10 +9,14 @@ import { dirname } from "node:path";
 const OUTPUT_PATH = "/output/entry.txt";
 
 function buildJoke(): string {
-  const setup = "I told my family group chat a joke about the Wi-Fi router.";
-  const beat = "Nobody replied.";
-  const punchline = "I guess it just didn't connect with them.";
-  return [setup, beat, punchline].join(" ");
+  // Tightened delivery: "our" makes it a dad at his own table,
+  // and the two-word beat gives the punchline room to land.
+  const lines = [
+    "I told our family group chat a joke about the Wi-Fi router.",
+    "Total silence.",
+    "I guess it just didn't connect with them.",
+  ];
+  return lines.join(" ");
 }
 
 function main(): void {
